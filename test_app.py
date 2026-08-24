@@ -1,9 +1,17 @@
-from app import predict_result
+from app import predict_grade
 
 
-def test_pass_student():
-    assert predict_result(75) == "FAIL"
+def test_grade_a():
+    assert predict_grade(95) == "A"
+
+
+def test_grade_b():
+    assert predict_grade(80) == "B"
+
+
+def test_grade_c():
+    assert predict_grade(60) == "C"
 
 
 def test_fail_student():
-    assert predict_result(30) == "FAIL"
+    assert predict_grade(30) == "FAIL"

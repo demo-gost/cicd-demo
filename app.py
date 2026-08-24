@@ -1,12 +1,18 @@
-def predict_result(marks):
-    if marks >= 40:
-        return "PASS"
+def predict_grade(marks):
+    if marks >= 90:
+        return "A"
+    elif marks >= 75:
+        return "B"
+    elif marks >= 40:
+        return "C"
     else:
         return "FAIL"
 
 
 if __name__ == "__main__":
-    marks = 75
-    result = predict_result(marks)
-    print("Student Marks:", marks)
-    print("Predicted Result:", result)
+    student_marks = 78
+
+    grade = predict_grade(student_marks)
+
+    print("Student Marks:", student_marks)
+    print("Student Grade:", grade)
