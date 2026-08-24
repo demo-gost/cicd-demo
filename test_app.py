@@ -10,7 +10,7 @@ def test_grade_b():
 
 
 def test_grade_c():
-    assert predict_grade(90) == "C"
+    assert predict_grade(60) == "C"
 
 
 def test_fail_student():
